@@ -1,0 +1,18 @@
+toEnum 50
+toEnum 50 :: Char <- erre vagyunk kíváncsiak
+
+((6 < 4) || ((4 >= 5) && (12 /= (4 * 4))))
+
+1 < 2 && 50 > (100 - 2) `mod` 50
+
+((2 < (div 18 4)) || ((mod 15 5) > (-3)))
+
+[10,9..(-10)]
+
+[11,32..] !! 112
+
+:i &&
+
+mountain x = ([1..x] ++ [x-1,x-2..1])
+
+rem <- (neg-re is pozitív mod)

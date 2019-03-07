@@ -1,0 +1,18 @@
+-- import Prelude hiding ((||), ...)
+
+sqrt $ == (
+    függvény erősebben köt bárminél 
+    ezért bekéne zárójelezni a kifejezést, a $ ráteszi a zárójelt
+    az egész kifejezésre
+)
+
+
+-- check these
+replaceNewline '\n' = ' '
+replaceNewline x = x
+
+replaceNewlines s = [replaceNewlines c | c <- s]
+--
+
+
+swapAll_a_az s = unwords [swap_a_az c | c <- words s]

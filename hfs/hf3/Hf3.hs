@@ -19,5 +19,5 @@ isValid a = isLetter(a) || isDigit(a) || isUnderscore(a)
 
 isValidUsername :: String -> Bool
 
-isValidUsername a = not(elem False (map isValid a))
+isValidUsername a = and (map isValid a)
 

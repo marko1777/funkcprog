@@ -1,0 +1,20 @@
+drop _ [] = []
+drop n l@(x:xs)
+ | n <= 0 = l --x:xs
+ | otherwise = drop (n-1) xs
+
+
+ @ alias a jobb oldalra
+
+ unzip [] = ([],[])
+unzip ((a,b):xs) = (a:as, b:bs) where
+ (as,bs) = unzip xs
+
+ splitAt _ [] = ([],[])
+splitAt n l | n <= 0 = ([],l)
+splitAt n (x:xs) = (x:as,bs) where
+ (as,bs) = splitAt (n-1) xs 
+
+ split [] = ([],[])
+split (x:xs) = (x:as, bs) where
+ (bs,as) = split xs

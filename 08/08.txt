@@ -1,0 +1,11 @@
+span p [] = ([],[])
+span p (x:xs)
+ | p x = (x:ys, zs)
+ | otherwise = ([], x:xs)
+ where (ys,zs) = span p xs
+
+
+??
+ zipWith f [] _ = []
+zipWith f _ [] = []
+zipWith f (x:xs) (y:ys) = (f x y) : (zipWith f xs xs)
